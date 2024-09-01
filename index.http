@@ -1,0 +1,37 @@
+GET http://localhost:3001/allUser/66d1a279fe1a947071c8ae0c/
+Content-Type : application/json
+###
+
+POST  http://localhost:3001/addMessage
+Content-Type : application/json
+
+{
+  "from":"66d1da246e105145e0a72fb8",
+  "to":"66d1daaa6e105145e0a72fc9",
+  "message":"how is you day"
+}
+###
+POST  http://localhost:3001/addMessage
+Content-Type : application/json
+
+{
+  "from":"66d1daaa6e105145e0a72fc9",
+  "to":"66d1da246e105145e0a72fb8",
+  "message":"Nice"
+}
+###
+POST  http://localhost:3001/getAllMessage
+Content-Type : application/json
+
+{
+  "from":"66d1daaa6e105145e0a72fc9",
+  "to":"66d1da246e105145e0a72fb8"
+}
+###
+GET  http://localhost:3001/getAllMessage
+Content-Type : application/json
+
+{
+  "from":"66d1da016e105145e0a72fb1",
+  "to":"66d1da246e105145e0a72fb8"
+}
